@@ -1,0 +1,31 @@
+{
+    "name": "zeit-test",
+    "version": "0.0.1",
+    "description": "test",
+    "main": "index.js",
+    "scripts": {
+        "now-build": "npm -v",
+        "build": "rollup -c rollup.config.js"
+    },
+    "author": "",
+    "homepage": "",
+    "dependencies": {
+        "express": "4.16.4",
+        "body-parser": "1.18.3",
+        "cookie-parser": "1.4.3",
+        "ejs": "2.6.1",
+        "riot": "3.13.1",
+        "riot-compiler": "3.5.1"
+    },
+    "devDependencies": {
+        "rollup": "^0.67.3",
+        "rollup-plugin-riot": "^2.0.0",
+        "rollup-plugin-commonjs": "^9.2.0",
+        "rollup-plugin-buble": "^0.19.4",
+        "rollup-plugin-json": "^3.1.0",
+        "rollup-plugin-node-resolve": "^3.4.0"
+    },
+    "engines": {
+        "node": "8.10"
+    }
+}
