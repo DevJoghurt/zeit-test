@@ -11,7 +11,7 @@ import cookieParser from 'cookie-parser'
 import {
     join
 } from 'path'
-import riot from 'riot'
+import riot from 'riot/lib/server'
 
 import Routes from './modules/routes'
 import './shared/app.tag'
