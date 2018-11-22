@@ -4,7 +4,7 @@
     "description": "test",
     "main": "index.js",
     "scripts": {
-        "now-build": "npm -v",
+        "now-build": "npm run build",
         "build": "rollup -c rollup.config.js"
     },
     "author": "",

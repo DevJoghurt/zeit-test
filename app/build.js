@@ -6,7 +6,8 @@ var express = _interopDefault(require('express'));
 var bodyParser = _interopDefault(require('body-parser'));
 var cookieParser = _interopDefault(require('cookie-parser'));
 var path = require('path');
-var riot = _interopDefault(require('riot'));
+var riot = _interopDefault(require('riot/lib/server'));
+var riot$1 = _interopDefault(require('riot'));
 
 var VIEWS_FOLDER = './views';
 var VIEWS_ENGINE = 'ejs';
@@ -126,10 +127,10 @@ dashboard.init(Routes);
 var information = new defaultExport$2();
 information.init(Routes);
 
-riot.tag2('test', '<h2>Test</h2>', '', '', function(opts) {
+riot$1.tag2('test', '<h2>Test</h2>', '', '', function(opts) {
 });
 
-riot.tag2('app', '<h1>hello world {opts.view}</h1> <test></test>', '', '', function(opts) {
+riot$1.tag2('app', '<h1>hello world {opts.view}</h1> <test></test>', '', '', function(opts) {
 });
 
 global.IS_SERVER = true;
